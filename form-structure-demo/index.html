@@ -1,36 +1,80 @@
-<!doctype html>
-<html class="no-js" lang="en-us">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Form Sturcture Demo</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Form Layout</title>
+        <meta name="Responsive layout for a form with 2 section at large, medium, and small" content="form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css\reset.css">
+        <link rel="stylesheet" href="css\styles.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <form action=""></form>
-                <h1>HTML5 Forms</h1>
-            </div>
-        </header>
-       
-       
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="bg-container">
+        <div class="col-container">
+            <section class="col-text">
+                <h1>Learn Web Design, Coding, & Much More</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section class="col-form">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <p class="top-banner">Try it free for 7days starting at 25$ a month</p>
+                        <div class="input">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="text-field" id="text-field" placeholder="E.g JC" autofocus/>
+                        </div>
+                        <div class="input">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="text-field" id="text-field" placeholder="E.g Bince"/>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="E.g email@gmail.com"/>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password"/>
+                        </div>
+                        <fieldset>
+                            <legend>Pick Your Area of Interest</legend>
+                            <div class="interest">
+                                <input type="radio" id="ui/ux" value="ui/ux">
+                                <label for="ui/ux">UI/UX</label>
+                                                                        </div>
+                            <div class="interest">
+                                <input type="radio" id="html&css" value="html&css">
+                                <label for="html&css">HTML & CSS</label>
+                            </div>
+                            <div class="interest">
+                                <input type="radio" id="javascript" value="javascript">
+                                <label for="javascript">Javascript</label>
+
+                            </div>
+                            <div class="interest">
+                                <input type="radio" id="php" value="php">
+                                <label for="php">PHP</label>
+                            </div>
+                            <div class="button">
+                            <input type="submit" value="Claim Your Free Trial  >">
+                            </div>
+                            <p >
+                                <label>
+                                  By Signing Up, You are Agreeing to Our <a href="/terms" >Terms of Service</a>
+                                </label>
+                              </p>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

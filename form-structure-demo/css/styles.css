@@ -1,105 +1,173 @@
-html {
-    color: #222;
-    font-size: 0.625rem;
-    line-height: 1.5;
-    font-family: 'Roboto Condensed', sans-serif;
+/**CSS Variables**/
+
+:root {
+    --white: #fff;
+    --dk-blue: #0d1238;
+    --lt-blue: #272f70;
+    --dk-green: #374d12;
+    --lt-green: #54761b;
+}
+
+html{
+
 }
 
 body{
-    font-size:1.8rem;
+    font-family: serif;
+    color: var(--white);
+    
+
 }
 
-header{ 
-    margin-bottom: 3rem; 
+form {
+    margin: 0 auto;
+    max-width: 40.375rem;
 }
 
-h1{
-    text-align: center;
-    font-size:6.4rem;;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
+fieldset {
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: .3125rem;
+    color: var(--dk-blue);
+    background-color: var(--white);
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+h1 {
+    font-family: serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+} 
 
-.invisible {
-    visibility: hidden;
+p{
+    
 }
 
+section {
+    padding: 1rem;
+    
+}
+
+fieldset > p {
+    padding: .5rem;
+    border-radius: .1rem;
+    text-align: center;
+   
+}
+
+p.top-banner {
+    color: var(--white);
+    background-color: var(--lt-green);
+}
+
+
+.input label {
+    display: block;
+    
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+.input input{
+    width: 20.875rem;
+    margin-left: 0.75rem;
+    
+}
+
+input[type=password] { 
+    margin-bottom: 1rem;
+}
+
+.interest div {
+    margin-bottom: .5rem;
+}
+
+legend {
+    margin: 1rem .75rem;
+}
+
+input[type=radio]{
+    width: initial;
+    margin-top: .5rem;
+    margin-left: .75rem;
+    
+}
+
+label[for="ui/ux"],
+label[for="html&css"],
+label[for="javascript"],
+label[for="php"] {
+    display: inline;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #272f70;
+    color: #ffffff;
+    border-radius: .3rem;S
+}
+
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/oriental-tiles.png);
+}
+
+.col-container{
+    margin-top: 5rem;
+    background-color: rgba(13,18,56,.7);
+}
+
+.interest > p > label a {
+    color: var(--lt-green);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:59.5rem)/**Medium**/ {
+    .col-container {
+        height: 53.1875rem;
+    }
+    
+    form {
+        max-width: 57.25rem;
+    }
+    
+    .input input{
+        width: 27.25rem;
+    }
+
+    .interest {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    input[type=radio]{
+        width: initial;
+        margin-top: .5rem;
+        margin-left: .75rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media screen and (min-width:111rem) /**Large**/{
+    .col-container {
+        height: 56.75rem;
+        display: inline;
+    }
+
+    form {
+        width: 40.375rem;
+    }
+
+    input[type=radio]{
+        width: initial;
+        margin-top: .5rem;
+        margin-left: .75rem;
+        
+    }
+}
