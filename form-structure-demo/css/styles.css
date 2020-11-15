@@ -105,13 +105,13 @@ input[type=submit] {
     border-radius: .3rem;
 }
 
-.bg-container{
+.bg-container {
     display: flex;
     flex-direction: column;
     background-image: url(/form-structure-demo/img/oriental-tiles.png);
 }
 
-.col-container{
+.col-container {
     margin-top: 5rem;
     background-color: rgba(13,18,56,.7);
 }
@@ -152,7 +152,7 @@ input[type=submit] {
     }
 }
 
-@media screen and (min-width:111rem) /**Large**/{
+@media screen and (min-width:111rem) /**Large**/ {
     .col-container {
         height: 56.75rem;
         display: inline;
@@ -160,12 +160,5 @@ input[type=submit] {
 
     form {
         width: 40.375rem;
-    }
-
-    input[type=radio]{
-        width: initial;
-        margin-top: .5rem;
-        margin-left: .75rem;
-        
     }
 }
